@@ -1,0 +1,73 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-bargray);
+}
+.home-container1 {
+  width: 1132px;
+  height: 1020px;
+  display: flex;
+  align-items: flex-start;
+  border-color: var(--dl-color-gray-bargray);
+  border-style: hidden;
+  border-width: 5px;
+  background-size: cover;
+  background-image: url("public/atkinson%20coms%20resume-3000h.jpg");
+}
+.home-container2 {
+  width: 1137px;
+  height: 584px;
+  display: flex;
+  align-items: flex-start;
+  border-color: rgba(120, 120, 120, 0.4);
+  border-style: hidden;
+  border-width: 2px;
+  background-size: cover;
+  background-image: url("public/atkinson%20coms%20resume-3000h.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+@media(max-width: 991px) {
+  .home-container1 {
+    width: 100%;
+    height: 2970px;
+  }
+  .home-container2 {
+    width: 100%;
+    height: 2576px;
+    display: flex;
+    background-position: right;
+  }
+}
+@media(max-width: 767px) {
+  .home-container1 {
+    width: 100%;
+    height: 2270px;
+  }
+  .home-container2 {
+    width: 100%;
+    height: 2013px;
+    display: flex;
+    background-position: top right;
+  }
+}
+@media(max-width: 479px) {
+  .home-container1 {
+    width: 100%;
+    height: 1384px;
+    margin-bottom: 1px;
+  }
+  .home-container2 {
+    width: 100%;
+    height: 1296px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0px;
+    justify-content: flex-start;
+    background-position: right;
+  }
+}
